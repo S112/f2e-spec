@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>使用H5跨端游戏方案 Hilo，实现H5接粽子游戏 | 前端开发手册(PSI - 用户运营)</title>
+    <meta name="generator" content="VuePress 1.8.2">
+    <link rel="shortcut icon" href="/f2e-spec/images/haier.ico">
+    <meta name="description" content="PSI - 用户运营，前端开发手册">
+    
+    <link rel="preload" href="/f2e-spec/assets/css/0.styles.7873d73b.css" as="style"><link rel="preload" href="/f2e-spec/assets/js/app.3309eded.js" as="script"><link rel="preload" href="/f2e-spec/assets/js/3.2602abd5.js" as="script"><link rel="preload" href="/f2e-spec/assets/js/26.fd7745ea.js" as="script"><link rel="prefetch" href="/f2e-spec/assets/js/10.437ec212.js"><link rel="prefetch" href="/f2e-spec/assets/js/11.ebac613a.js"><link rel="prefetch" href="/f2e-spec/assets/js/12.23fb209d.js"><link rel="prefetch" href="/f2e-spec/assets/js/13.c2cf6c86.js"><link rel="prefetch" href="/f2e-spec/assets/js/14.f0538b85.js"><link rel="prefetch" href="/f2e-spec/assets/js/15.87a1870d.js"><link rel="prefetch" href="/f2e-spec/assets/js/16.d86d1b3f.js"><link rel="prefetch" href="/f2e-spec/assets/js/17.7c9ecdd5.js"><link rel="prefetch" href="/f2e-spec/assets/js/18.dea25da2.js"><link rel="prefetch" href="/f2e-spec/assets/js/19.7f8b9146.js"><link rel="prefetch" href="/f2e-spec/assets/js/20.8915c755.js"><link rel="prefetch" href="/f2e-spec/assets/js/21.0aedf954.js"><link rel="prefetch" href="/f2e-spec/assets/js/22.a8337aba.js"><link rel="prefetch" href="/f2e-spec/assets/js/23.028ccdc7.js"><link rel="prefetch" href="/f2e-spec/assets/js/24.f7f78b09.js"><link rel="prefetch" href="/f2e-spec/assets/js/25.f2c7e7de.js"><link rel="prefetch" href="/f2e-spec/assets/js/27.4c329a44.js"><link rel="prefetch" href="/f2e-spec/assets/js/28.3d7d4923.js"><link rel="prefetch" href="/f2e-spec/assets/js/4.2b737eda.js"><link rel="prefetch" href="/f2e-spec/assets/js/5.45cf5799.js"><link rel="prefetch" href="/f2e-spec/assets/js/6.7ffd6af1.js"><link rel="prefetch" href="/f2e-spec/assets/js/7.936e9d68.js"><link rel="prefetch" href="/f2e-spec/assets/js/8.e007796c.js"><link rel="prefetch" href="/f2e-spec/assets/js/9.8f0a01f2.js"><link rel="prefetch" href="/f2e-spec/assets/js/vendors~photo-swipe.95985bcd.js">
+    <link rel="stylesheet" href="/f2e-spec/assets/css/0.styles.7873d73b.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/f2e-spec/" class="home-link router-link-active"><!----> <span class="site-name">前端开发手册(PSI - 用户运营)</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><a href="/f2e-spec/summary/october_2021" class="sidebar-heading clickable"><span>一. 问题总结</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/f2e-spec/summary/october_2021.html" class="sidebar-link">10月份</a></li><li><a href="/f2e-spec/summary/november_2021.html" class="sidebar-link">11月份</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/f2e-spec/qiankun/qiankun_enter" class="sidebar-heading clickable"><span>二. 乾坤微前端</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/f2e-spec/qiankun/qiankun_enter.html" class="sidebar-link">1. 接入</a></li><li><a href="/f2e-spec/qiankun/qiankun_problem.html" class="sidebar-link">2. 问题解决</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/f2e-spec/git/" class="sidebar-heading clickable"><span>三. Git</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/f2e-spec/git/problem.html" class="sidebar-link">1. 问题解决</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/f2e-spec/name/project" class="sidebar-heading clickable"><span>四. 命名规则</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/f2e-spec/name/project.html" class="sidebar-link">1. 项目、目录和文件</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/f2e-spec/html/code" class="sidebar-heading clickable"><span>五. HTML规范</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/f2e-spec/html/code.html" class="sidebar-link">1. 代码规范</a></li><li><a href="/f2e-spec/html/template.html" class="sidebar-link">2. 文件模版</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/f2e-spec/css/structure" class="sidebar-heading clickable"><span>六. CSS规范</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/f2e-spec/css/structure.html" class="sidebar-link">1. 目录结构</a></li><li><a href="/f2e-spec/css/code.html" class="sidebar-link">2. 代码规范</a></li><li><a href="/f2e-spec/css/reset.html" class="sidebar-link">3. 重置样式</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/f2e-spec/javascript/code" class="sidebar-heading clickable"><span>七. JavaScript规范</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/f2e-spec/javascript/code.html" class="sidebar-link">1. 代码规范</a></li><li><a href="/f2e-spec/javascript/es6.html" class="sidebar-link">2. ES6语法规范</a></li></ul></section></li><li><section class="sidebar-group depth-0"><a href="/f2e-spec/vue/" class="sidebar-heading clickable router-link-active open"><span>八. Vue项目规范</span> <!----></a> <ul class="sidebar-links sidebar-group-items"><li><a href="/f2e-spec/vue/code.html" class="sidebar-link">1. 代码规范</a></li><li><a href="/f2e-spec/vue/knowledge.html" class="sidebar-link">2. 知识点</a></li><li><a href="/f2e-spec/vue/dragonGame.html" aria-current="page" class="active sidebar-link">3. 接粽子游戏</a><ul class="sidebar-sub-headers"></ul></li></ul></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h3 id="使用h5跨端游戏方案-hilo-实现h5接粽子游戏"><a href="#使用h5跨端游戏方案-hilo-实现h5接粽子游戏" class="header-anchor">#</a> 使用H5跨端游戏方案 Hilo，实现H5接粽子游戏</h3> <h4 id="一-所用到的hilo相关的类-hilo官方文档"><a href="#一-所用到的hilo相关的类-hilo官方文档" class="header-anchor">#</a> 一. 所用到的Hilo相关的类 <a href="https://hiloteam.github.io/Hilo/docs/api-zh/index.html" target="_blank" rel="noopener noreferrer">Hilo官方文档<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></h4> <ul><li><strong>Hilo.Stage：</strong> 舞台是可视对象树的根（相当游戏基础canvas），可视对象只有添加到舞台或其子对象后才会被渲染出来。创建一个hilo应用一般都是从创建一个stage开始的。</li> <li><strong>Hilo.Class.create：</strong> 创建各个相应的类</li> <li><strong>Hilo.EventMixin：</strong> 事件相关功能（fire、off、on）</li> <li><strong>Hilo.LoadQueue：</strong> 队列下载</li> <li><strong>Hilo.Tween：</strong> 动画</li> <li><strong>Hilo.Bitmap：</strong> 图像</li> <li><strong>Hilo.Ticker：</strong> 定时器（可以按指定帧率重复运行、默认60）</li></ul> <h4 id="二-文件结构"><a href="#二-文件结构" class="header-anchor">#</a> 二. 文件结构：</h4> <div class="language- extra-class"><pre class="language-text"><code>├── views
+│   |── game
+│   │   |── Asset.js
+│   │   |── Game.js
+│   │   |── index.vue
+│   │   |── Zongzi.js
+</code></pre></div><h4 id="三-实现思路"><a href="#三-实现思路" class="header-anchor">#</a> 三. 实现思路：</h4> <ol><li><strong>资源加载（Asset.js）</strong><br>
+(1) 创建一个下载队列 LoadQueue<br> <code>this.queue = new Hilo.LoadQueue();</code><br>
+如果要下载的图片多的话，可以配置参数 maxConnections（maxConnections），默认值是2。
+<code>this.queue.maxConnections = 10;</code><br> <code>this.queue.add(this.imgs);</code><br>
+监听队列加载完成，如果complete，则执行回调函数onComplete。<br> <code>this.queue.on('complete', this.onComplete.bind(this));</code><br> <code>this.queue.start();</code><br>
+onComplete方法，是把相应的资源缓存起来，删除下载队列的complete事件，并向Game.js推送消息 loadAsset-complete，整个资源加载完成了。</li></ol> <div class="language-vue extra-class"><pre class="language-vue"><code>onComplete () {
+    this.bg = this.queue.get('bg').content;
+    ......
+
+    this.queue.off('complete');
+    this.fire('loadAsset-complete');
+}
+</code></pre></div><ol start="2"><li><strong>生成粽子、爆竹小道具（Zongzi.js）</strong><br>
+之前在 Asset.js 加载好的粽子、和爆竹图片，会存到 zongziList 数组中，使用Hilo.Bitmap类，将图片转换成相应的canvas。</li></ol> <div class="language-vue extra-class"><pre class="language-vue"><code>const zongzi = new Hilo.Bitmap({
+    image: this.zongziList[index].item,
+    rect: [0, 0, this.zongziList[index].item.width, this.zongziList[index].item.height]
+}).addTo(this);
+</code></pre></div><p>通过 setInterval，会随机的从 zongziList 数组中抽取 粽子 或 爆竹。</p> <div class="language-vue extra-class"><pre class="language-vue"><code>startCreateZongzi() {
+    this.creatZongzi();
+    this.timer = setInterval(() =&gt; {
+        this.creatZongzi();
+    }, this.createSpeed);
+},
+</code></pre></div><p>当道具的y值大于游戏界面的height值时，销毁它。</p> <div class="language-vue extra-class"><pre class="language-vue"><code>zongzi.over = function() {
+    this.removeFromParent();
+};
+zongzi.onUpdate = function() {
+    if (this.parent.height &lt; this.y) {
+        this.removeFromParent();
+    }
+};
+</code></pre></div><ol start="3"><li><strong>游戏配置（Game.js）</strong><br>
+首先会监听loadAsset-complete事件，如果资源（图片、声音等）加载完成，进行游戏初始化，创建游戏舞台stage。</li></ol> <div class="language-vue extra-class"><pre class="language-vue"><code>init() {
+    this.asset.on('loadAsset-complete', function() {
+        this.asset.off('loadAsset-complete');
+        this.initStage();
+    }.bind(this));
+    this.asset.loadAsset();
+},
+</code></pre></div><p>游戏舞台stage，相当于游戏的壳子，在这个壳子中进行游戏的实现，选用的渲染方式是canvas，stage.enableDOMEvent 方法作用是开启舞台的DOM的事件响应，这样手势操作、鼠标滑动等事件才能监听到。
+然后对游戏背景、龙舟、粽子（爆竹）进行绘制，并开启游戏的定时器。</p> <div class="language-vue extra-class"><pre class="language-vue"><code>initStage() {
+    this.stage = new Hilo.Stage({
+        renderType: 'canvas',
+        container: this.page,
+        ....
+    });
+    this.stage.enableDOMEvent([Hilo.event.POINTER_START, Hilo.event.POINTER_MOVE, Hilo.event.POINTER_END]);
+
+    this.initBg();
+    this.initTick();
+    this.initBoat();
+    this.initZongzi();
+    this.startGame();
+},
+</code></pre></div><p>对游戏舞台stage的实时的进行更新，并碰撞检测</p> <div class="language- extra-class"><pre class="language-text"><code>onUpdate() { // 舞台更新
+    if (this.gameStatus === 'ready') {
+        return;
+    }
+
+    this.zongzi.children.forEach(item =&gt; {
+        if (['firecracker1', 'firecracker2'].includes(item.name)) {
+            if (this.hitTestFirecracker(this.boat, item, false)) {
+                this.gameOver();
+            }
+        } else {
+            if (item.hitTestObject(this.boat, false)) {
+                item.over();
+                this.score += 1;
+            }
+        }
+    });
+}
+</code></pre></div></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/f2e-spec/vue/knowledge.html" class="prev">
+        2. 知识点
+      </a></span> <!----></p></div> </main></div><div class="global-ui"><div tabindex="-1" role="dialog" aria-hidden="true" class="pswp"><div class="pswp__bg"></div> <div class="pswp__scroll-wrap"><div class="pswp__container"><div class="pswp__item"></div> <div class="pswp__item"></div> <div class="pswp__item"></div></div> <div class="pswp__ui pswp__ui--hidden"><div class="pswp__top-bar"><div class="pswp__counter"></div> <button class="pswp__button pswp__button--close"></button> <button class="pswp__button pswp__button--share"></button> <button class="pswp__button pswp__button--fs"></button> <button class="pswp__button pswp__button--zoom"></button> <div class="pswp__preloader"><div class="pswp__preloader__icn"><div class="pswp__preloader__cut"><div class="pswp__preloader__donut"></div></div></div></div></div> <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap"><div class="pswp__share-tooltip"></div></div> <button class="pswp__button pswp__button--arrow--left"></button> <button class="pswp__button pswp__button--arrow--right"></button> <div class="pswp__caption"><div class="pswp__caption__center"></div></div></div></div></div><section class="side-anchor"><ul style="display:none;"></ul></section></div></div>
+    <script src="/f2e-spec/assets/js/app.3309eded.js" defer></script><script src="/f2e-spec/assets/js/3.2602abd5.js" defer></script><script src="/f2e-spec/assets/js/26.fd7745ea.js" defer></script>
+  </body>
+</html>
